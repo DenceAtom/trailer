@@ -11,6 +11,19 @@ def extract_youtube_urls(video_url):
         'quiet': True,
         'no_warnings': True,
         'extract_flat': False,
+        'sleep_interval': 1,
+        'max_sleep_interval': 5,
+        'sleep_interval_requests': 1,
+        'sleep_interval_subtitles': 1,
+        'http_headers': {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',
+            'Accept-Language': 'en-us,en;q=0.5',
+            'Accept-Encoding': 'gzip, deflate',
+            'Connection': 'keep-alive',
+        },
+        'retries': 3,
+        'fragment_retries': 3,
     }
 
     try:
